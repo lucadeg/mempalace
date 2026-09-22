@@ -1,17 +1,9 @@
+
 name: Version Guard
 
 on:
-  push:
-    tags: ['v*']
-  pull_request:
-    paths:
-      - 'pyproject.toml'
-      - 'mempalace/version.py'
-      - '.claude-plugin/marketplace.json'
-      - '.claude-plugin/plugin.json'
-      - '.codex-plugin/plugin.json'
-      - '.github/workflows/version-guard.yml'
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   check-versions:
     runs-on: ubuntu-latest

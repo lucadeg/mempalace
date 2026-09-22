@@ -1,11 +1,9 @@
+
 name: Tests
 
 on:
-  push:
-    branches: [main, develop]
-  pull_request:
-    branches: [main, develop]
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   test-linux:
     runs-on: ubuntu-latest
